@@ -1,0 +1,9 @@
+D:\c_sharp_Net\MVC\Ray.OA\Ray.OA.Common\bin\Debug\Ray.OA.Common.dll
+D:\c_sharp_Net\MVC\Ray.OA\Ray.OA.Common\bin\Debug\Ray.OA.Common.pdb
+D:\c_sharp_Net\MVC\Ray.OA\Ray.OA.Common\obj\Debug\Ray.OA.Common.dll
+D:\c_sharp_Net\MVC\Ray.OA\Ray.OA.Common\obj\Debug\Ray.OA.Common.pdb
+D:\c_sharp_Net\MVC\Ray.OA\Ray.OA.Common\bin\Debug\Ray.OA.Common.dll.config
+D:\c_sharp_Net\MVC\Ray.OA\Ray.OA.Common\bin\Debug\EntityFramework.dll
+D:\c_sharp_Net\MVC\Ray.OA\Ray.OA.Common\bin\Debug\EntityFramework.xml
+D:\c_sharp_Net\MVC\Ray.OA\Ray.OA.Common\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\c_sharp_Net\MVC\Ray.OA\Ray.OA.Common\obj\Debug\Ray.OA.Common.csprojResolveAssemblyReference.cache

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="DataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="DataModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="OAOrderInfo" EntityType="DataModel.OAOrderInfo" />
+    <EntitySet Name="OAUserInfo" EntityType="DataModel.OAUserInfo" />
+    <AssociationSet Name="FK_OAUserInfoOAOrderInfo" Association="DataModel.FK_OAUserInfoOAOrderInfo">
+      <End Role="OAUserInfo" EntitySet="OAUserInfo" />
+      <End Role="OAOrderInfo" EntitySet="OAOrderInfo" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="OAOrderInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Content" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="OAUserInfoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="OAUserInfo" Relationship="DataModel.FK_OAUserInfoOAOrderInfo" FromRole="OAOrderInfo" ToRole="OAUserInfo" />
+  </EntityType>
+  <EntityType Name="OAUserInfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="OAOrderInfo" Relationship="DataModel.FK_OAUserInfoOAOrderInfo" FromRole="OAUserInfo" ToRole="OAOrderInfo" />
+  </EntityType>
+  <Association Name="FK_OAUserInfoOAOrderInfo">
+    <End Type="DataModel.OAUserInfo" Role="OAUserInfo" Multiplicity="1" />
+    <End Type="DataModel.OAOrderInfo" Role="OAOrderInfo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OAUserInfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OAOrderInfo">
+        <PropertyRef Name="OAUserInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
