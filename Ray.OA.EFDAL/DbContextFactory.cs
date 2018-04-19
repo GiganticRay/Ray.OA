@@ -10,10 +10,16 @@ namespace Ray.OA.EFDAL
 {
     static class DbContextFactory
     {
+        public static DbContext MyDataModelContainer { get; set; }
         public static DbContext GetCurrentDbContext()
         {
             //一个请求共用一个实例
-            return new DataModelContainer();
+            if (MyDataModelContainer == null)
+            {
+                MyDataModelContainer = new DataModelContainer();
+            }
+
+            return MyDataModelContainer;
         }
     }
 }

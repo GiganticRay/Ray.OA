@@ -20,7 +20,7 @@ namespace Ray.OA.UnitTest.BLL
         }
 
         [TestMethod]
-        public void SearchTest()
+        public void GetTest()
         {
             OAUserInfoService userinfoservice = new OAUserInfoService();
             IQueryable<OAUserInfo> userinfoQuery = userinfoservice.Get(a => a.Id > 0);
@@ -35,7 +35,7 @@ namespace Ray.OA.UnitTest.BLL
         public void DeleteTest()
         {
             OAUserInfoService userinfoservice = new OAUserInfoService();
-            userinfoservice.Delete(user => user.UName=="Leichao");
+            userinfoservice.Delete(user => user.UName=="BigRay");
             Console.WriteLine("\r\n删除数据成功");
         }
     }
