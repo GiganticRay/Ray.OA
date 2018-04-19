@@ -44,7 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseService.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="OAOrderInfoService.cs" />
     <Compile Include="OAUserInfoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -54,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ray.OA.DalFactory\Ray.OA.DalFactory.csproj">
-      <Project>{7C71AA0A-2DA7-47EC-9952-4AB8E287F0BA}</Project>
+      <Project>{7c71aa0a-2da7-47ec-9952-4ab8e287f0ba}</Project>
       <Name>Ray.OA.DalFactory</Name>
     </ProjectReference>
     <ProjectReference Include="..\Ray.OA.EFDAL\Ray.OA.EFDAL.csproj">
@@ -62,7 +64,7 @@
       <Name>Ray.OA.EFDAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Ray.OA.IDAL\Ray.OA.IDAL.csproj">
-      <Project>{8a4652dc-3ea7-44bd-935d-5d84cbf6cb1f}</Project>
+      <Project>{8A4652DC-3EA7-44BD-935D-5D84CBF6CB1F}</Project>
       <Name>Ray.OA.IDAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Ray.OA.Model\Ray.OA.Model.csproj">

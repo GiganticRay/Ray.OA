@@ -35,8 +35,8 @@ namespace Ray.OA.UnitTest.BLL
         public void DeleteTest()
         {
             OAUserInfoService userinfoservice = new OAUserInfoService();
-            userinfoservice.Delete(user => user.UName=="BigRay");
-            Console.WriteLine("\r\n删除数据成功");
+            
+            Console.WriteLine("\r\n删除{0}数据成功", userinfoservice.Delete(user => user.UName == "Leichao1"));
         }
     }
 }

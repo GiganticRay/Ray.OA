@@ -126,6 +126,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\OAUserInfoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -215,14 +216,36 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\OAUserInfo\CreateResult.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ray.OA.BLL\Ray.OA.BLL.csproj">
+      <Project>{893C5A03-49AB-487C-AEDF-3F3734C34F4C}</Project>
+      <Name>Ray.OA.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ray.OA.Common\Ray.OA.Common.csproj">
+      <Project>{b94a3c80-2aee-46a5-adf6-f004b01ea639}</Project>
+      <Name>Ray.OA.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ray.OA.EFDAL\Ray.OA.EFDAL.csproj">
+      <Project>{34bc19d0-7ed6-4399-b646-6e0bff1b8076}</Project>
+      <Name>Ray.OA.EFDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ray.OA.IDAL\Ray.OA.IDAL.csproj">
+      <Project>{8a4652dc-3ea7-44bd-935d-5d84cbf6cb1f}</Project>
+      <Name>Ray.OA.IDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ray.OA.Model\Ray.OA.Model.csproj">
+      <Project>{301db1dc-d43f-42f1-bc7a-9f6643e64056}</Project>
+      <Name>Ray.OA.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

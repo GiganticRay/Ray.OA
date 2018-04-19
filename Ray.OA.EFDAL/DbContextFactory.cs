@@ -8,7 +8,7 @@ using Ray.OA.Model;
 
 namespace Ray.OA.EFDAL
 {
-    static class DbContextFactory
+    public static class DbContextFactory
     {
         public static DbContext MyDataModelContainer { get; set; }
         public static DbContext GetCurrentDbContext()

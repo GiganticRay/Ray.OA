@@ -16,6 +16,8 @@ namespace Ray.OA.EFDAL
     public class BaseDal<TModel> where TModel:class , new ()//约束条件： TModel必须是一个类， 而且默认构造函数
     {
         //但是这样写实体的话解耦合度不高 ：例如如果换了数据库访问驱动、那么BLL层也要做相应的更改、所以这里采用接口的实现
+
+        //这里可以线程内共享上下文实例，返回的是Dbcontext（抽象编程,DbContext是所有表实体上下文的模板、所以这里可以接收所有DAl上下文的返回）
         static private DbContext DbContextEnity
         {
             get { return DbContextFactory.GetCurrentDbContext(); }
@@ -83,7 +85,7 @@ namespace Ray.OA.EFDAL
         public TModel Add(TModel Enity)
         {
             DbContextEnity.Entry(Enity).State = EntityState.Added;
-            DbContextEnity.SaveChanges();
+            //DbContextEnity.SaveChanges();
             return Enity;
         }
         #endregion
@@ -104,7 +106,7 @@ namespace Ray.OA.EFDAL
             {
                 DbContextEnity.Entry(VARIABLE).State = EntityState.Deleted;
             }
-            DbContextEnity.SaveChanges();
+            //DbContextEnity.SaveChanges();
             return DeleteCount;
         }
 
@@ -116,7 +118,8 @@ namespace Ray.OA.EFDAL
         public bool Update(TModel Enity)
         {
             DbContextEnity.Entry(Enity).State = EntityState.Modified;
-            return DbContextEnity.SaveChanges() > 0;
+            //return DbContextEnity.SaveChanges() > 0;
+            return true;
         }
 
         #endregion
