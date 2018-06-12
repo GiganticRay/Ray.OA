@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{893C5A03-49AB-487C-AEDF-3F3734C34F4C}</ProjectGuid>
+    <ProjectGuid>{985DD44F-40EA-461C-96B6-FAC50D4E34EC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Ray.OA.BLL</RootNamespace>
@@ -33,6 +33,9 @@
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="Spring.Core">
+      <HintPath>..\..\..\Spring_Net\Spring.NET-2.0.0-M2\Spring.NET\bin\net\4.0\release\Spring.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -44,33 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseService.cs" />
-    <Compile Include="Class1.cs" />
-    <Compile Include="OAOrderInfoService.cs" />
+    <Compile Include="BaseServices.cs" />
     <Compile Include="OAUserInfoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Ray.OA.DalFactory\Ray.OA.DalFactory.csproj">
-      <Project>{7c71aa0a-2da7-47ec-9952-4ab8e287f0ba}</Project>
-      <Name>Ray.OA.DalFactory</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Ray.OA.EFDAL\Ray.OA.EFDAL.csproj">
-      <Project>{34bc19d0-7ed6-4399-b646-6e0bff1b8076}</Project>
-      <Name>Ray.OA.EFDAL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Ray.OA.IDAL\Ray.OA.IDAL.csproj">
-      <Project>{8A4652DC-3EA7-44BD-935D-5D84CBF6CB1F}</Project>
+    <ProjectReference Include="..\IBaseDal.cs\Ray.OA.IDAL.csproj">
+      <Project>{22B1893C-0FF0-4FB8-96D6-03512147F39C}</Project>
       <Name>Ray.OA.IDAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Ray.OA.Model\Ray.OA.Model.csproj">
-      <Project>{301DB1DC-D43F-42F1-BC7A-9F6643E64056}</Project>
+      <Project>{3B39B730-E925-47E1-A8A4-6E77E7D16732}</Project>
       <Name>Ray.OA.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

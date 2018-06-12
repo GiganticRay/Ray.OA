@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EFProductModelStoreContainer" CdmEntityContainer="EFProductEntities">
+    <EntitySetMapping Name="OAUserInfo">
+      <EntityTypeMapping TypeName="EFProductModel.OAUserInfo">
+        <MappingFragment StoreEntitySet="OAUserInfo">
+          <ScalarProperty Name="UPwd" ColumnName="UPwd" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UName" ColumnName="UName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

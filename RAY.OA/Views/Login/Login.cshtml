@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+
+    @* JS *@
+    <script src="~/Resource/jquery-3.2.1.min.js"></script>
+    <script src="~/Resource/LoginAndRegister.js"></script>
+</head>
+<body>
+    <div>
+        <form id="LoginForm" method="post">
+            <input type="text" name="UserId" />
+            <input type="text" name="UserPwd" />
+            <input type="text" name="VCode" />
+            <img id="VertifyCode" src="/Login/VertifyCodeImg" />
+        </form>
+
+        <button id="LoginBtn">登陆</button>
+    </div>
+</body>
+</html>

@@ -1,9 +1,8 @@
-D:\c_sharp_Net\MVC\Ray.OA\Ray.OA.Common\bin\Debug\Ray.OA.Common.dll
-D:\c_sharp_Net\MVC\Ray.OA\Ray.OA.Common\bin\Debug\Ray.OA.Common.pdb
-D:\c_sharp_Net\MVC\Ray.OA\Ray.OA.Common\obj\Debug\Ray.OA.Common.dll
-D:\c_sharp_Net\MVC\Ray.OA\Ray.OA.Common\obj\Debug\Ray.OA.Common.pdb
-D:\c_sharp_Net\MVC\Ray.OA\Ray.OA.Common\bin\Debug\Ray.OA.Common.dll.config
-D:\c_sharp_Net\MVC\Ray.OA\Ray.OA.Common\bin\Debug\EntityFramework.dll
-D:\c_sharp_Net\MVC\Ray.OA\Ray.OA.Common\bin\Debug\EntityFramework.xml
-D:\c_sharp_Net\MVC\Ray.OA\Ray.OA.Common\bin\Debug\zh-Hans\EntityFramework.resources.dll
-D:\c_sharp_Net\MVC\Ray.OA\Ray.OA.Common\obj\Debug\Ray.OA.Common.csprojResolveAssemblyReference.cache
+D:\Study_c_sharp_Net\RAY.OA\RAY.OA.Common\bin\Debug\RAY.OA.Common.dll
+D:\Study_c_sharp_Net\RAY.OA\RAY.OA.Common\bin\Debug\RAY.OA.Common.pdb
+D:\Study_c_sharp_Net\RAY.OA\RAY.OA.Common\obj\Debug\RAY.OA.Common.dll
+D:\Study_c_sharp_Net\RAY.OA\RAY.OA.Common\obj\Debug\RAY.OA.Common.pdb
+D:\Study_c_sharp_Net\RAY.OA\RAY.OA.Common\bin\Debug\log4net.dll
+D:\Study_c_sharp_Net\RAY.OA\RAY.OA.Common\bin\Debug\log4net.pdb
+D:\Study_c_sharp_Net\RAY.OA\RAY.OA.Common\bin\Debug\log4net.xml
+D:\Study_c_sharp_Net\RAY.OA\RAY.OA.Common\obj\Debug\RAY.OA.Common.csprojResolveAssemblyReference.cache

@@ -1,0 +1,8 @@
+D:\Study_c_sharp_Net\RAY.OA\Log4NetDemo\bin\Debug\Log4NetDemo.exe.config
+D:\Study_c_sharp_Net\RAY.OA\Log4NetDemo\bin\Debug\Log4NetDemo.exe
+D:\Study_c_sharp_Net\RAY.OA\Log4NetDemo\bin\Debug\Log4NetDemo.pdb
+D:\Study_c_sharp_Net\RAY.OA\Log4NetDemo\bin\Debug\log4net.dll
+D:\Study_c_sharp_Net\RAY.OA\Log4NetDemo\bin\Debug\log4net.pdb
+D:\Study_c_sharp_Net\RAY.OA\Log4NetDemo\bin\Debug\log4net.xml
+D:\Study_c_sharp_Net\RAY.OA\Log4NetDemo\obj\Debug\Log4NetDemo.exe
+D:\Study_c_sharp_Net\RAY.OA\Log4NetDemo\obj\Debug\Log4NetDemo.pdb

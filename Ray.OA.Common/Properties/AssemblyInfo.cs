@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过以下
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("Ray.OA.Common")]
+[assembly: AssemblyTitle("RAY.OA.Common")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Ray.OA.Common")]
+[assembly: AssemblyProduct("RAY.OA.Common")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("c9bb00a4-4c43-40c2-8a3f-a7ccd9f31bb2")]
+[assembly: Guid("af43de0e-5068-40e4-95c4-b4fd4f64b1e5")]
 
 // 程序集的版本信息由下面四个值组成: 
 //

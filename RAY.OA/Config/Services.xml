@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net" default-autowire="constructor">
+
+  <object name="oaUserInfoService" type="Ray.OA.BLL.OAUserInfoService, Ray.OA.BLL" singleton="false" >
+    <property name="DbContextEnity" ref="DbContextEnity"/>
+    <property name="CurrentDal" ref ="OAUserInfoDal"/> 
+  </object>
+
+</objects>

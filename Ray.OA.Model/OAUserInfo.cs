@@ -14,14 +14,8 @@ namespace Ray.OA.Model
     
     public partial class OAUserInfo
     {
-        public OAUserInfo()
-        {
-            this.OAOrderInfo = new HashSet<OAOrderInfo>();
-        }
-    
         public int Id { get; set; }
         public string UName { get; set; }
-    
-        public virtual ICollection<OAOrderInfo> OAOrderInfo { get; set; }
+        public string UPwd { get; set; }
     }
 }

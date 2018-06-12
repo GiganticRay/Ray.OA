@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net" default-autowire="constructor">
+
+  <object name="OAUserInfoDal" type="Ray.OA.Dal.OAUserInfoDal, Ray.OA.Dal" singleton="false" >
+    <description>OAUserInfoDal</description>
+  </object>
+
+</objects>
